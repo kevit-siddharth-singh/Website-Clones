@@ -35,14 +35,14 @@ body {
 .navbar img {
   width: 100%;
   height: 44px;
-  transition: linear 0.4S;
-  -webkit-transition: linear 0.4S;
-  -moz-transition: linear 0.4S;
-  -ms-transition: linear 0.4S;
-  -o-transition: linear 0.4S;
+  transition: linear 0.4s;
+  -webkit-transition: linear 0.4s;
+  -moz-transition: linear 0.4s;
+  -ms-transition: linear 0.4s;
+  -o-transition: linear 0.4s;
 }
 
-img:hover{
+.navbar img:hover {
   box-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 5px #55e6a5,
     0 0 10px #55e6a5, 0 0 10px #55e6a5, 0 0 25px #55e6a5;
 }
@@ -98,8 +98,8 @@ img:hover{
   -o-transition: linear 0.1s;
 }
 
-.hero-btn button:hover{
-    background-color: #fff;
+.hero-btn button:hover {
+  background-color: #fff;
 }
 
 .hero-btn:hover svg:not(:hover) {
@@ -161,8 +161,140 @@ img:hover{
 
 .data .data-subtitle {
   margin: 0;
-  font-size: 120px;
+  font-size: 130px;
   font-weight: bold;
 }
 
+.data-desc {
+  width: 50%;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Sid :  */
+
 /*Note : Main Css Ends Here */
+
+/*Note : Services Css Starts Here */
+.my-services {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+}
+
+.my-services-data {
+  margin-top: 130px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 15px;
+}
+
+.my-services-data-title {
+  font-size: 18px;
+  color: #55e6a5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.my-services-data-heading {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.my-services-data-desc {
+  text-align: center;
+  line-height: 29px;
+  font-size: 19px;
+}
+
+/*Note : Services Css Ends Here */
+
+/*Note : Services-Card Css Starts Here */
+
+.services-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  color: #fff;
+  background-image: url("../Assets/Ellipse-28.png");
+  background-size: 100px;
+  background-color: #0a1019;
+  background-repeat: no-repeat;
+  background-position: 150px 50px;
+  padding-top: 20px;
+  transition: linear 0.3s;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+}
+
+.services-card {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img img {
+  background-size: cover;
+  width: 95%;
+}
+
+.card-logo {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
+}
+
+.card-logo img {
+  padding-left: 20px;
+}
+
+.card-arrow {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  color: #55e6a5;
+  background-color: #02050a;
+  width: 50px;
+  height: 50px;
+}
+.card p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.card:hover {
+  background-position: 100px 10px;
+  box-shadow: 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 50px #55e6a5,
+    0 0 50px #55e6a5, 0 0 50px #55e6a5, 0 0 50px #55e6a5;
+  
+}
+
+/*Note : Services Css Ends Here */
+
+/*Note : Footer Css Starts Here */
+
+/*Note : Footer Css Ends Here */
