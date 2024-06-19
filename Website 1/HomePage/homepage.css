@@ -100,6 +100,8 @@ body {
 
 .hero-btn button:hover {
   background-color: #fff;
+  
+
 }
 
 .hero-btn:hover svg:not(:hover) {
@@ -240,6 +242,14 @@ body {
   -moz-transition: linear 0.3s;
   -ms-transition: linear 0.3s;
   -o-transition: linear 0.3s;
+  /*ANimationOnscroll*/
+  opacity: 0;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  /*ANimationOnscroll*/
 }
 
 .services-card {
@@ -253,6 +263,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .card-img img {
@@ -285,12 +296,10 @@ body {
   font-weight: bold;
 }
 
-
 .card:hover {
   background-position: 100px 10px;
-  box-shadow: 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 50px #55e6a5,
-    0 0 50px #55e6a5, 0 0 50px #55e6a5, 0 0 50px #55e6a5;
-  
+  box-shadow: 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 20px #55e6a5,
+    0 0 20px #55e6a5, 0 0 20px #55e6a5, 0 0 20px #55e6a5;
 }
 
 /*Note : Services Css Ends Here */
@@ -298,3 +307,19 @@ body {
 /*Note : Footer Css Starts Here */
 
 /*Note : Footer Css Ends Here */
+
+/* ! Animation onscroll */
+.show {
+  opacity: 1;
+  transition: linear 0.6s;
+  -webkit-transition: linear 0.6s;
+  -moz-transition: linear 0.6s;
+  -ms-transition: linear 0.6s;
+  -o-transition: linear 0.6s;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+/* ! Animation onscroll */
