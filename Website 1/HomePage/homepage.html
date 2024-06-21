@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="homepage.css" />
     <link rel="shortcut icon" href="../Assets/sid.png" type="image/x-icon" />
     <script defer src="homepage.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!--Sid:  header Starts here -->
@@ -40,21 +47,27 @@
           </button>
         </div>
 
-        <div class="harburger-menu">
-          
-
+        <div class="hamburger-menu-wrapper" onclick="togglemenu()">
+          <i class="fa-solid fa-bars fa-2xl" id="hamburger-icon"></i>
         </div>
-
-
-
-
-
-
       </nav>
     </header>
+    <div id="hidden-menu">
+      <div class="hidden-menu-bg">
+        
+      </div>
+      <div class="hidden-links">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT ME</a>
+        <a href="#">CONTACT ME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">PRODUCTS</a>
+      </div>
+    </div>
     <!--Sid:  header Ends here -->
+
     <!--Note:  Main Div(With Form) Starts here -->
-    <div class="main" >
+    <div class="main">
       <div class="data">
         <p class="data-title">S I D D H A R T H</p>
         <p class="data-subtitle">D E V</p>
@@ -67,10 +80,6 @@
     </div>
 
     <!--Note:  Main Div(With Form) Ends here -->
-
-
-
-
 
     <!--Note:  Services Div(With Form) Starts here -->
 
@@ -107,7 +116,13 @@
             <img src="../Assets/development-1.png" alt="" />
             <div class="card-arrow">&#8599;</div>
           </div>
-          <p  onMouseOver="this.style.color='white'" onMouseOut="this.style.color='black'" style="color: black; ">Website Development</p>
+          <p
+            onMouseOver="this.style.color='white'"
+            onMouseOut="this.style.color='black'"
+            style="color: black"
+          >
+            Website Development
+          </p>
           <div class="card-img">
             <img src="../Assets/Services-card1.jpg" alt="" />
           </div>
@@ -227,9 +242,7 @@
 
     <!-- Note :Whatsapp Floating Btn Ends here -->
 
-
-
-<!-- Sid: Work With me Section  Starts Here-->
+    <!-- Sid: Work With me Section  Starts Here-->
 
     <div class="work-with-me">
       <div class="header-arrow">
@@ -247,24 +260,23 @@
       </div>
     </div>
 
-<!-- Sid: Work With me Section  Starts Here-->
-<!-- !: Floating Top Btn Section  Starts Here-->
-<div onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="topup-btn">
-&#10132;
+    <!-- Sid: Work With me Section  Starts Here-->
+    <!-- !: Floating Top Btn Section  Starts Here-->
+    <div
+      onclick='window.scrollTo({top: 0, behavior: "smooth"});'
+      class="topup-btn"
+    >
+      &#10132;
+    </div>
 
-</div>
-
-<!-- !: Floating Top Btn Section  Starts Here-->
-
-
-
-
-
+    <!-- !: Floating Top Btn Section  Starts Here-->
 
     <footer>
       <div class="footer">
-
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, ullam quibusdam beatae a perferendis dicta atque accusantium quis quo eius dignissimos nulla iure animi, quisquam nihil asperiores ut? Exercitationem, adipisci.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur,
+        ullam quibusdam beatae a perferendis dicta atque accusantium quis quo
+        eius dignissimos nulla iure animi, quisquam nihil asperiores ut?
+        Exercitationem, adipisci.
       </div>
     </footer>
   </body>

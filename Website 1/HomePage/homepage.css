@@ -57,9 +57,75 @@ body {
   padding-right: 0;
 }
 
-/* Note : Hamburger Css Starts Here*/
+/* Sid : Hamburger Menu */
+.hamburger-menu-wrapper {
+  display: none;
+  z-index: 20;
+  
+}
 
-/* Note : Hamburger Css Ends Here*/
+#hidden-menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+  width: 30vw;
+  height: 100vh;
+  z-index: 10;
+  
+}
+.hidden-menu-bg {
+ 
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(85, 230, 165, 0.45);
+  box-shadow:   0px 5px 20px  rgba(88, 238, 138, 0.781);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+.hidden-links {
+
+  position: absolute;
+  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+}
+
+.hidden-links a{
+ 
+  padding: 10px;
+  text-decoration: none;
+letter-spacing: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+.hidden-links a:hover{
+  color: white;
+  background: rgba(52, 250, 134, 0.822);
+box-shadow: 0 0px 32px 0 rgba(252, 252, 252, 0.842);
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+/* Sid : Hamburger Menu */
+
+/* Note : Services Css Starts Here*/
 
 .services a {
   transition: linear 0.1s;
@@ -571,6 +637,9 @@ body {
 
 /* Sid : For Screen Size 1090 */
 @media (max-width: 1090px) {
+  
+
+
   .data .data-title {
     font-size: 110px;
 
@@ -597,7 +666,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* ! Hamburger Menu Starts Here*/
   .hero-btn,
   .navbar .services {
     display: none;
@@ -609,8 +677,23 @@ body {
   .logo {
     width: 9rem;
   }
+  /* ! Show Hamburger Menu CssStarts Here*/
+  .hamburger-menu-wrapper {
+    z-index: 20;
+    display: block;
+  }
+  .hamburger-menu-wrapper i {
+    color: #55e6a5;
+  }
+  .hidden-menu-bg{
 
-  /* ! Hamburger Menu Ends Here*/
+    display: none;
+  }
+
+  .hidden-menu-bg{
+    display: none;
+  }
+  /* ! Show Hamburger Menu Css Ends Here*/
 
   .data .data-title {
     font-size: 6rem;
